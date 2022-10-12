@@ -242,3 +242,9 @@ padding-top: 100px;
     margin-top: 50px;
     text-align: center;
   }
+
+
+  .rel-pos{
+    position: absolute;
+    color: white;
+  }
