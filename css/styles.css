@@ -63,7 +63,7 @@ align-items: center;
 padding-top: 30px;
 }
 
-.sliderContainer{
+.slideContainer{
     display: flex;
     height: 500px;
     width: 100%;
