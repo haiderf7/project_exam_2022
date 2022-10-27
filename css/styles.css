@@ -92,10 +92,29 @@ padding-top: 30px;
     width: 2rem;
 }
 
+.previousButton{
+  border: 1px solid var(--type-clr);
+  border-radius: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 2rem;
+}
+
 .slider-content{
     transition: all 0.5s ease;
     text-decoration: none;
     color: #000000;
+}
+
+.sliderContainer{
+  display: flex;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 0 20px;
 }
 
 
@@ -195,7 +214,7 @@ padding-top: 100px;
 .form-container {
     max-width: 760px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 55px;
   }
   
   form {
@@ -205,8 +224,8 @@ padding-top: 100px;
   
 
   
-  button {
-    margin-left: 6px;
+.button-contact {
+    margin-left: 11px;
     background: #5b2900;
     border: none;
     width: 100%;
@@ -218,8 +237,15 @@ padding-top: 100px;
     font-size: larger;
   }
   
-  button:hover {
+  .button-contact:hover {
     box-shadow: inset 700px 0 0 0 black;
+  }
+
+  .input-contact{
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
   }
   
   label {
@@ -235,7 +261,8 @@ padding-top: 100px;
   }
   
   .message {
-    height: 45px;
+    height: 55px;
+    width: 104%;
   }
   
   .h1-contact-us {

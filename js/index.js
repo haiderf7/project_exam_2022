@@ -1,6 +1,6 @@
 
 const url =
-  "https://www.haiderhashem.one/haiderhashem_onehaider_project_exam1/wp-json/wp/v2/posts?per_page=100";
+  "https://haiderhashem.one/project-exam-1/wp-json/wp/v2/posts?per_page=100";
 
 const slideShow = document.querySelector(".slideContainer");
 const button_next = document.querySelector(".nextButton");

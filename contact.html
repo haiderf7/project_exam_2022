@@ -38,15 +38,17 @@
         <div>
           <label>
             Name (required)
-            <input name="Name" id="Name" />
+            <input class="input-contact" name="Name" id="Name" />
           </label>
-          <div class="error" id="NameError">Please enter your first name</div>
+          <div class="error" id="NameError">
+            Must contain at least 5 characters
+          </div>
         </div>
 
         <div>
           <label>
             Email
-            <input name="email" id="email" />
+            <input class="input-contact" name="email" id="email" />
           </label>
           <div class="error" id="emailError">
             Please enter a valid email address
@@ -55,14 +57,24 @@
 
         <div>
           <label>
-            Message (minimum 20 characters)
+            Subject
+            <input class="input-contact" name="subject" id="subject" />
+          </label>
+          <div class="error" id="subjectError">
+            Your subject must be at least 15 characters
+          </div>
+        </div>
+
+        <div>
+          <label>
+            Message (minimum 25 characters)
             <input name="message" id="message" class="message" />
           </label>
           <div class="error" id="messageError">
-            Your Subject must be at least 20 characters
+            Your message must be at least 25 characters
           </div>
         </div>
-        <button>Submit</button>
+        <button class="button-contact">Submit</button>
       </form>
     </main>
     <script src="js/contact.js"></script>

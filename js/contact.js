@@ -5,7 +5,8 @@ const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
-
+const subject = document.querySelector("#subject");
+const subjectError = document.querySelector("#subjectError");
 
 
 function validateForm(event) {
@@ -28,6 +29,15 @@ function validateForm(event) {
     } else {
         emailError.style.display = "block";
     }
+
+
+    if (checkLength(subject.value, 3) === true) {
+        subjectError.style.display = "none";
+    } else {
+        subjectError.style.display = "block";
+    }
+
+    
 
     console.log("hello");
 };
