@@ -17,7 +17,7 @@ async function getProducts(url) {
       slideShow.innerHTML += `<div class="slider-post">
                                 <a href="blog-post-specific.html?id=${results.id}" class="slider-content">
                                  <h3>${results.title.rendered}</h3>
-                                 <img src="${results.content.rendered}" alt="Picture of ${results.title.rendered}" />
+                                 ${results.content.rendered}
                                 </a>
                               </div>`;
     });
