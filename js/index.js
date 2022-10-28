@@ -1,6 +1,6 @@
 
 const url =
-"https://haiderhashem.one/project-exam-1/wp-json/wp/v2/posts?per_page=100";
+"https://haiderhashem.one/project-exam-1/wp-json/wp/v2/posts?per_page=100&_embed";
 
 const slideShow = document.querySelector(".slideContainer");
 const button_next = document.querySelector(".nextButton");
@@ -13,13 +13,15 @@ async function getProducts(url) {
     slideShow.innerHTML = "";
     console.log(results);
 
-    results.forEach(function (results) {
-      slideShow.innerHTML += `<div class="slider-post">
-                                <a href="blog-post-specific.html?id=${results.id}" class="slider-content">
-                                 <h3>${results.title.rendered}</h3>
-                                 ${results.content.rendered}
-                                </a>
-                              </div>`;
+    results.forEach(function(result) {
+      slideShow.innerHTML += `
+        <div class="slider-post">
+          <a href="blog-post-specific.html?id=${result.id}" class="slider-content">
+            <h3>${result.title.rendered}</h3>
+            <img src="${result._embedded['wp:featuredmedia']['0'].source_url}" alt="${result.title.rendered}" />
+          </a>
+        </div>
+      `;
     });
 
     const slideItems = document.querySelectorAll(".slider-post");

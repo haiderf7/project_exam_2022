@@ -286,3 +286,11 @@ padding-top: 100px;
     position: absolute;
     color: white;
   }
+
+
+
+  @media only screen and (max-width: 800px) {
+    .slideContainer img{
+      height: 24vw;
+    }
+  }
