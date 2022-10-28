@@ -218,7 +218,28 @@ padding-top: 100px;
     justify-content: center;
 }
 
+.api-blog{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
 
+.api-blog img{
+  width: 500px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.api-blog a{
+  text-decoration: none;
+  color: #000000;
+}
 
 /*contact*/
 
