@@ -309,6 +309,30 @@ padding-top: 100px;
   }
 
 
+  /* About us */
+
+  .aboutus-image{
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .about-img-content{
+    justify-content: center;
+    display: flex;
+  }
+
+  .h1-about{
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .aboutus-info{
+    text-align: center;
+    background-color: silver;
+    padding: 30px;
+    margin: 30px;
+  }
+
 
   @media only screen and (max-width: 800px) {
     .slideContainer img{

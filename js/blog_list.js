@@ -17,7 +17,7 @@ async function apiBlogs(url) {
     console.log(results);
 
     for (let i = 0; i < results.length; i++) {
-      productContainer.innerHTML += `<div class= "api-posts-style"><a href="blog-post-specific.html?id=${results[i].id}">
+      productContainer.innerHTML += `<div class= "api-posts-style"><a href="blog_specific.html?id=${results[i].id}">
       <div><h2>${results[i].title.rendered}</h2></div>
             <div><img src="${results[i].jetpack_featured_media_url}" alt="Picture of ${results[i].title.rendered}"></img></div>
             <div>${results[i].excerpt.rendered}</div>

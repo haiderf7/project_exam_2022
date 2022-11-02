@@ -6,7 +6,7 @@ const slideShow = document.querySelector(".slideContainer");
 const button_next = document.querySelector(".nextButton");
 const button_prev = document.querySelector(".previousButton");
 
-async function getProducts(url) {
+async function getBlogImages(url) {
   try {
     const response = await fetch(url);
     const results = await response.json();
@@ -16,7 +16,7 @@ async function getProducts(url) {
     results.forEach(function(result) {
       slideShow.innerHTML += `
         <div class="slider-post">
-          <a href="blog-post-specific.html?id=${result.id}" class="slider-content">
+          <a href="blog_specific.html?id=${result.id}" class="slider-content">
             <h3>${result.title.rendered}</h3>
             <img src="${result._embedded['wp:featuredmedia']['0'].source_url}" alt="${result.title.rendered}" />
           </a>
@@ -78,4 +78,4 @@ async function getProducts(url) {
   }
 }
 
-getProducts(url);
+getBlogImages(url);
