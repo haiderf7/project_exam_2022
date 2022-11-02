@@ -7,7 +7,7 @@ console.log(params);
 
 const cors = "https://noroffcors.herokuapp.com/";
 const url =
-"https://haiderhashem.one/project-exam-1/wp-json/wp/v2/posts"+ id;
+"https://haiderhashem.one/project-exam-1/wp-json/wp/v2/posts/"+ id;
 
 const corsUrl = cors + url;
 
@@ -27,7 +27,6 @@ async function apiBlogs() {
     const results = await response.json();
     document.title = results.title.rendered;
 
-    console.log(product);
     productContainer.innerHTML += `
         <div class="details">
         <div><h2>${results.title.rendered}</h2></div>
