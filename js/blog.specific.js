@@ -25,7 +25,6 @@ async function apiBlogs() {
   try {
     const response = await fetch(corsUrl);
     const results = await response.json();
-    const product = results;
     document.title = results.title.rendered;
 
     console.log(product);
@@ -33,7 +32,7 @@ async function apiBlogs() {
         <div class="details">
         <div><h2>${results.title.rendered}</h2></div>
         <div><img onclick="onClick(this)" class="modalHoverOpacity"
-        <div><img src="${results[i].jetpack_featured_media_url}" alt="Picture of ${results[i].title.rendered}"></img></div>
+        <div><img src="${results.jetpack_featured_media_url}" alt="Picture of ${results.title.rendered}"></img></div>
         <div>${results.excerpt.rendered}</div>
         <div>${results.content.rendered}</div>
       </div>`;
